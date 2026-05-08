@@ -1,5 +1,3 @@
-// Place any global data in this file.
-// You can import this data from anywhere in your site by using the `import` keyword.
-
-export const SITE_TITLE = 'Astro Blog';
-export const SITE_DESCRIPTION = 'Welcome to my website!';
+// Place any shared constants for your site here.
+export const SITE_TITLE = 'Autophagy';
+export const SITE_DESCRIPTION = "A practitioner's guide to fasting, exercise, cold immersion, sauna, and hypoxic breathing for athletes who care about living well.";
