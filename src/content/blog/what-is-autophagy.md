@@ -61,6 +61,6 @@ Don't take any single claim, including the ones in this article, as gospel. Trac
 
 What you can rely on is that the five practices do trigger autophagy, do correlate with better outcomes in the populations that follow them, and cost almost nothing in money. That's about as close to a free lunch as the longevity field has produced.
 
-## What the Autophagy app tracks
+## The app
 
-The Autophagy app logs all five practices in one place, awards points for hitting meaningful thresholds, and pulls your HRV, resting heart rate, sleep, and VO2 max from Apple Health to show you which combinations are working for you. Daily target: 50 points, six days a week, with one rest day. The app reflects your practice back to you so you can see what's actually moving your numbers.
+An iPhone app of the same name is in development. Launch will be announced here.
