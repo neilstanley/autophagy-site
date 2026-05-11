@@ -1,0 +1,89 @@
+---
+title: 'Fasting and autophagy: how long and how often matters'
+description: 'Fasting reliably triggers autophagy in humans somewhere past 14 hours. Here is what the evidence supports, what it does not, and how to dose it as an athlete.'
+pubDate: '2026-05-11'
+heroImage: ''
+---
+
+Of the five autophagy-inducing practices, fasting is the most studied and the most over-claimed. The biology is real. The dose-response curve is genuinely understood. But the version of fasting that turns up in podcast clips, where an 18-hour eating window cures everything from arthritis to brain fog, has very little to do with what the controlled human research actually shows.
+
+This is the practitioner's read on what we know, what we do not, and how to use fasting as an athlete who wants to keep training hard into their 60s.
+
+## What the human data actually says
+
+Most of the headline numbers about fasting and autophagy come from rodent work and from cell culture, where you can biopsy tissue freely and stain for autophagy markers like LC3-II and p62. In humans, autophagy is genuinely hard to measure outside a research lab. You can do skeletal muscle biopsies after a fasted training session, which is how we have most of our human data, but you cannot do that for breakfast.
+
+What the human evidence supports, with reasonable confidence:
+
+- Autophagy markers in skeletal muscle increase after roughly **14 to 16 hours** of fasting, with a stronger response when the fast is combined with exercise.
+- The response keeps climbing with longer fasts. **24 to 48 hours** drives a substantially bigger systemic signal than daily time-restricted eating.
+- Refeeding shuts the signal off rapidly via mTOR activation. A handful of nuts at hour twelve will end the autophagy phase of your fast, even if your blood glucose stays low.
+- Protein, even more than carbohydrate, is the strongest mTOR trigger. Black coffee, plain tea, water and salt do not break a fast for autophagy purposes. A protein bar does.
+
+What the human evidence does **not** support, despite frequent claims:
+
+- A specific magic number ("autophagy starts at exactly 16 hours"). The threshold varies by individual, training status, last meal composition and probably genetics. 14 to 18 is the band the research clusters in. Anyone giving you a precise hour is overselling.
+- That longer is always better. Fasts beyond 72 hours start measurably eroding lean mass, and for an over-40 athlete trying to defend muscle, that is a real cost.
+- That fasted training is universally superior. Fasted sessions amplify the autophagy signal but blunt high-intensity performance. The trade is real and goes both ways.
+
+Confidence in the above: **moderate to high** for the cellular biology, **moderate** for the dose thresholds, **low** for any claim about a specific weekly fasting protocol producing a specific health outcome.
+
+## The mTOR/AMPK seesaw
+
+Two cellular pathways do most of the work here. mTOR is the build pathway: it switches on when amino acids and insulin show up, and it tells the cell to grow, replicate and store. AMPK is the maintenance pathway: it switches on when energy is scarce, and it tells the cell to clean, recycle and conserve.
+
+Autophagy lives downstream of AMPK and is suppressed by mTOR. Constant feeding keeps mTOR on. Long enough fasting windows let AMPK take over and autophagy ramps up. This is why "I just skip breakfast and my eating window is 16:8" works as an autophagy strategy, and why "I sip BCAAs through the morning" does not, even though both feel like fasting.
+
+For an athlete, the design problem is balancing the two. You need mTOR pulses to build muscle. You need AMPK windows to clean it up. The practical answer is to alternate them on a daily and weekly cycle rather than try to maximise either one.
+
+## How long, how often: the practitioner's protocols
+
+Three patterns are well-supported and athlete-compatible. Pick one or rotate.
+
+### Daily 16:8 with one weekly extension
+
+The default. Eat between, say, 12:00 and 20:00 each day. Aim for 16 hours fasted overnight. Once a week, push one of those fasts to 20 or 24 hours. The cumulative weekly autophagy exposure is meaningful and the protocol survives a normal life.
+
+This is what most over-40 athletes I know who take the longevity side seriously actually do.
+
+### 5:2 with longer fasts
+
+Five normal eating days, two days at 500 to 600 kcal or full water fasts. The autophagy signal on the low-calorie days is significantly stronger than 16:8. The downside is that hard training on those days is a poor idea, so you have to plan your week around it.
+
+Better suited to people whose training is more endurance-flavoured and less power-flavoured.
+
+### Periodic 36 to 48 hour fasts
+
+Once every two to four weeks, a planned 36 or 48-hour water fast. No food, water and electrolytes only. Coffee allowed. This is where you get a genuinely deep autophagy signal of the kind that matters for clearing senescent cells and dysfunctional mitochondria. Cost: one ruined training day and a recovery day after.
+
+I do this every three to four weeks.
+
+What does **not** work as an autophagy strategy: random meal-skipping with no consistent window, "intuitive" fasting that drifts based on mood, or daily 12:12 eating windows. The 12-hour fast is just sleep. The autophagy signal is below threshold.
+
+## The athlete-specific concerns
+
+Three real ones, in order of importance.
+
+**Muscle protein synthesis windows.** Over-40 athletes need more protein than they used to and need it distributed across the day to maximise synthesis. Squashing all your protein into a 6-hour window is fine if the total is high enough (1.6 to 2.2 g/kg/day, leaning to the top end with age) and you split it across two or three meals with at least 30 g of protein each. Below that, you start losing the war on sarcopenia, and no amount of autophagy will compensate.
+
+**Performance on hard sessions.** Long fasts blunt repeat-effort and high-power output. If you have a CrossFit competition, a Hyrox race or a heavy lifting day, eat properly. Fast on your easier days. Stacking a 24-hour fast onto a competition is silly.
+
+**Sleep.** Eating late suppresses melatonin and disrupts deep sleep. Early time-restricted eating (eat 8:00 to 16:00, fast through the evening) is biologically better than late (12:00 to 20:00) but socially almost impossible. Most of us settle for "stop eating three hours before bed", which is the achievable version of the same idea.
+
+## What I actually do
+
+A typical week looks like this. Daily 16:8, eating between roughly 12:00 and 20:00. CrossFit four to five days. One of those, usually Wednesday, is fasted; I train at 7:00 and do not eat until noon. One 24-hour fast a week, usually Sunday, where I eat dinner Saturday and break the fast with Sunday dinner. Every three to four weeks, a 36 to 48-hour planned fast, scheduled across two rest days.
+
+Coffee throughout. Plenty of water and salt. Protein hit hard at the first meal post-fast: roughly 50 g, usually meat or fish with vegetables and good fat. No "fasting-mimicking diet" boxes, no exogenous ketones, no fancy supplements. None of it adds anything that the underlying protocol does not already provide.
+
+## The honest caveat
+
+The longevity internet talks about fasting as if dose-response is a settled question. It is not. We have strong evidence that fasting upregulates autophagy in humans. We have moderate evidence on the time thresholds. We have weak evidence on which weekly pattern produces the best long-term outcome, because that study would take 30 years to run and nobody has run it yet.
+
+So treat the protocols above as informed defaults, not optimised answers. Track your training quality, your sleep, your HRV and your bodyweight while you do this. If any of those are degrading, your fasting load is too high. If they are stable or improving, the dose is right for you.
+
+The cellular biology is real. The practice is free. The version of it that works long-term is the boring sustainable one, not the heroic 7-day-water-fast one your podcast told you about.
+
+## The app
+
+An iPhone app of the same name is in development. It will track fasting alongside the other four autophagy practices, and surface the cumulative weekly load against your training and recovery markers. Launch will be announced here.
