@@ -2,9 +2,10 @@
 title: 'Fasting and autophagy: how long and how often matters'
 description: 'Fasting reliably triggers autophagy in humans somewhere past 14 hours. Here is what the evidence supports, what it does not, and how to dose it as an athlete.'
 pubDate: '2026-05-11'
-heroImage: './fasting-neil-spain.jpg'
-heroImageAlt: 'Neil Stanley on the final day of a five-day water-only fast, on a coastal terrace overlooking a Mediterranean harbour in Spain, 2026'
 ---
+
+import { Image } from 'astro:assets';
+import spainPhoto from './fasting-neil-spain.jpg';
 
 Of the five autophagy-inducing practices, fasting is the most studied and the most over-claimed. The biology is real. The dose-response curve is genuinely understood. But the version of fasting that turns up in podcast clips, where an 18-hour eating window cures everything from arthritis to brain fog, has very little to do with what the controlled human research actually shows.
 
@@ -75,7 +76,15 @@ Three real ones, in order of importance.
 
 A typical week looks like this. Daily 16:8, eating between roughly 12:00 and 20:00. CrossFit four to five days. One of those, usually Wednesday, is fasted; I train at 7:00 and do not eat until noon. One 24-hour fast a week, usually Sunday, where I eat dinner Saturday and break the fast with Sunday dinner. Every three to four weeks, a 36 to 48-hour planned fast, scheduled across two rest days.
 
-Once or twice a year, I go deeper. The photo at the top of this piece was taken at the back end of a five-day water-only fast in Spain earlier this year. Water, electrolytes, sleep, daily walks on the coast, no training. The shift around day three is the part you can only know by doing it: the hunger machinery quiets down and the experience stops being primarily about food. The reason to do this beyond the daily and weekly protocols is to chase the deeper autophagy and senescent-cell clearance signals that you simply do not get from a 16:8 window. The reason not to do it lightly is that five days away from training has a real cost and the refeed has to be careful and slow.
+<Image
+  src={spainPhoto}
+  alt="Neil Stanley on the final day of a five-day water-only fast, on a coastal terrace overlooking a Mediterranean harbour in Spain, 2026"
+  widths={[320, 480, 640]}
+  sizes="(max-width: 720px) 90vw, 360px"
+  class="float-right"
+/>
+
+Once or twice a year, I go deeper. The photo here was taken at the back end of a five-day water-only fast in Spain earlier this year. Water, electrolytes, sleep, daily walks on the coast, no training. The shift around day three is the part you can only know by doing it: the hunger machinery quiets down and the experience stops being primarily about food. The reason to do this beyond the daily and weekly protocols is to chase the deeper autophagy and senescent-cell clearance signals that you simply do not get from a 16:8 window. The reason not to do it lightly is that five days away from training has a real cost and the refeed has to be careful and slow.
 
 Coffee throughout. Plenty of water and salt. Protein hit hard at the first meal post-fast: roughly 50 g, usually meat or fish with vegetables and good fat. No "fasting-mimicking diet" boxes, no exogenous ketones, no fancy supplements. None of it adds anything that the underlying protocol does not already provide.
 

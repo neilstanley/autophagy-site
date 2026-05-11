@@ -52,6 +52,33 @@ const { title, description, pubDate, updatedDate, heroImage, heroImageAlt } = As
 			.last-updated-on {
 				font-style: italic;
 			}
+			.prose :global(img.float-right) {
+				float: right;
+				max-width: 50%;
+				margin: 0.25em 0 1em 1.5em;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+			}
+			.prose :global(img.float-left) {
+				float: left;
+				max-width: 50%;
+				margin: 0.25em 1.5em 1em 0;
+				border-radius: 12px;
+				box-shadow: var(--box-shadow);
+			}
+			.prose :global(h2),
+			.prose :global(h3) {
+				clear: both;
+			}
+			@media (max-width: 720px) {
+				.prose :global(img.float-right),
+				.prose :global(img.float-left) {
+					float: none;
+					display: block;
+					max-width: 100%;
+					margin: 1em auto;
+				}
+			}
 		</style>
 	</head>
 
