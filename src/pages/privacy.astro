@@ -1,0 +1,146 @@
+---
+import BaseHead from '../components/BaseHead.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import { SITE_TITLE } from '../consts';
+---
+
+<!doctype html>
+<html lang="en">
+	<head>
+		<BaseHead
+			title={`Privacy | ${SITE_TITLE}`}
+			description="What Autophagy collects, where it lives, and what we share with anyone else. Short answer: nothing leaves your device."
+		/>
+	</head>
+	<body>
+		<Header />
+		<main>
+			<h1>Privacy</h1>
+			<p><em>Effective 15 May 2026.</em></p>
+
+			<h2>Summary</h2>
+			<p>
+				The Autophagy iOS app collects no personal data. Every session you log
+				(fasting, exercise, cold, sauna, breathing) is stored on your device only.
+				Nothing is uploaded to our servers because we have no servers that hold
+				user data. We don't use third-party analytics inside the app, no tracking
+				SDKs, no advertising networks.
+			</p>
+			<p>
+				The marketing website at autophagy.fit uses Google Analytics for basic
+				traffic measurement (which pages people read, how they got here). That's
+				it.
+			</p>
+
+			<h2>The iOS app</h2>
+
+			<h3>What we store</h3>
+			<p>The app stores the following on your device only, via Apple's SwiftData framework:</p>
+			<ul>
+				<li>Your logged sessions: fasting periods, exercise, cold immersion, sauna, Reset Breathing rounds, and any notes you attach</li>
+				<li>Your preferences: daily target, reminder time, appearance choice, founder-pricing reservation status</li>
+			</ul>
+			<p>
+				None of this leaves the device. There is no Autophagy account, no sign-in,
+				no sync to a remote server. If you delete the app, the data is gone.
+			</p>
+
+			<h3>What we don't collect</h3>
+			<ul>
+				<li>No email address, name, phone number, or any other identifying information</li>
+				<li>No location data</li>
+				<li>No advertising identifiers</li>
+				<li>No HealthKit data in v1. HealthKit integration is planned for v2 and will be opt-in with the standard iOS permission prompt</li>
+				<li>No analytics events or usage telemetry from inside the app</li>
+				<li>No data sold or shared with third parties</li>
+			</ul>
+
+			<h3>Notifications</h3>
+			<p>
+				If you turn on the daily reminder in Settings, the app schedules a local
+				iOS notification at your chosen time. The notification is generated and
+				delivered entirely on your device. We don't operate a push-notification
+				server.
+			</p>
+
+			<h3>Content tab</h3>
+			<p>
+				The in-app content library loads articles from autophagy.fit using
+				Apple's WKWebView. When you open an article, your device makes a standard
+				HTTP request to autophagy.fit, the same as visiting the site in a
+				browser. That request is logged by Cloudflare (who host the site) in
+				standard server access logs. We don't link those logs back to individuals.
+			</p>
+
+			<h2>The website (autophagy.fit)</h2>
+
+			<h3>Google Analytics</h3>
+			<p>
+				We use Google Analytics 4 to understand which pages get read, where
+				visitors come from, and roughly how the site is performing. Google
+				Analytics sets a cookie in your browser and reports aggregated traffic
+				data back to us. We don't view or store individual visitor identities.
+			</p>
+			<p>
+				If you'd rather not be counted, install any standard ad/tracker blocker,
+				or set your browser to send the Do Not Track signal. Google Analytics
+				doesn't enforce that signal but most blockers do.
+			</p>
+
+			<h3>Cloudflare</h3>
+			<p>
+				The site is hosted on Cloudflare Pages. Cloudflare keeps standard server
+				access logs (IP address, request URL, user agent, timestamp) for the
+				purposes of operating their service and protecting against abuse. We
+				don't read these logs.
+			</p>
+
+			<h3>What we don't do on the website</h3>
+			<ul>
+				<li>No advertising or ad networks</li>
+				<li>No data sold to third parties</li>
+				<li>No personalised tracking beyond standard analytics</li>
+				<li>No cookies set by Autophagy itself, only by Google Analytics</li>
+			</ul>
+
+			<h2>Your rights</h2>
+			<p>
+				Because we collect no personal data in the app, there's nothing for us to
+				disclose, correct, or delete on request. If you want to remove all your
+				app data, delete the app from your phone.
+			</p>
+			<p>
+				For website traffic data collected through Google Analytics, you can opt
+				out using
+				<a href="https://tools.google.com/dlpage/gaoptout">Google's official
+				opt-out browser extension</a>.
+			</p>
+
+			<h2>Children</h2>
+			<p>
+				Autophagy is not directed at children under 13. If you believe a child
+				has provided us with information through any of our services (we can't
+				see what that would be, since we don't collect anything), please email us
+				and we'll review it.
+			</p>
+
+			<h2>Changes to this policy</h2>
+			<p>
+				If we change what data the app or website handles, this page will be
+				updated and the effective date at the top revised. Material changes will
+				also be announced inside the app on next launch.
+			</p>
+
+			<h2>Contact</h2>
+			<p>
+				Questions about privacy: autophagy@alamex.com
+			</p>
+			<p>
+				Autophagy is operated by Alamex Ltd, a company registered in England and
+				Wales.
+			</p>
+		</main>
+		<Footer />
+	</body>
+</html>
