@@ -3,12 +3,41 @@ const today = new Date();
 ---
 
 <footer>
-	&copy; {today.getFullYear()} Neil Stanley. All rights reserved.</footer>
+	<nav class="footer-links">
+		<a href="/about/">About</a>
+		<span class="sep">·</span>
+		<a href="/blog/">Blog</a>
+		<span class="sep">·</span>
+		<a href="/privacy/">Privacy</a>
+		<span class="sep">·</span>
+		<a href="/terms/">Terms</a>
+	</nav>
+	<p class="copyright">&copy; {today.getFullYear()} Neil Stanley. All rights reserved.</p>
+</footer>
 <style>
 	footer {
 		padding: 2em 1em 6em 1em;
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;
+	}
+	.footer-links {
+		margin: 0 0 0.75em;
+		font-size: 0.95rem;
+	}
+	.footer-links a {
+		color: rgb(var(--gray-dark));
+		text-decoration: none;
+	}
+	.footer-links a:hover {
+		color: rgb(var(--accent));
+	}
+	.footer-links .sep {
+		margin: 0 0.4em;
+		color: rgb(var(--gray-light-dark, var(--gray)));
+	}
+	.copyright {
+		margin: 0;
+		font-size: 0.85rem;
 	}
 </style>
