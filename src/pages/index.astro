@@ -3,42 +3,174 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+
+const modalities = [
+	{
+		slug: 'fasting-and-autophagy',
+		label: 'Fasting',
+		teaser:
+			'The most studied trigger. Eat in an 8-hour window most days, push to 24 hours once a week.',
+	},
+	{
+		slug: 'exercise-and-autophagy',
+		label: 'Exercise',
+		teaser:
+			'Hard sessions plus recovery. Why CrossFit and zone 2 do the same cellular work by different routes.',
+	},
+	{
+		slug: 'cold-water-and-autophagy',
+		label: 'Cold water',
+		teaser:
+			'Minutes per degree. Four sessions a week. The protocol that adapts your cells in seven days.',
+	},
+	{
+		slug: 'sauna-and-autophagy',
+		label: 'Sauna',
+		teaser:
+			'40% lower all-cause mortality at four sessions a week. The Finnish dose-response curve.',
+	},
+	{
+		slug: 'reset-breathing-and-autophagy',
+		label: 'Reset breathing',
+		teaser:
+			'Ten minutes of intermittent hypoxia. The cheapest of the five practices and the youngest evidence base.',
+	},
+];
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<style>
+			main {
+				width: 960px;
+				max-width: calc(100% - 2em);
+				margin: auto;
+				padding: 3em 1em;
+			}
+			.hero {
+				text-align: left;
+				margin-bottom: 3em;
+			}
+			.hero h1 {
+				font-size: 2.4rem;
+				line-height: 1.15;
+				margin: 0 0 0.6em;
+			}
+			.hero p {
+				font-size: 1.1rem;
+				color: rgb(var(--gray-dark));
+				margin: 0 0 0.8em;
+				max-width: 36em;
+			}
+			.modality-section h2 {
+				margin: 0 0 1em;
+				font-size: 1.4rem;
+			}
+			.grid {
+				display: grid;
+				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+				gap: 1.25rem;
+			}
+			.card {
+				display: block;
+				padding: 1.25rem 1.25rem 1.5rem;
+				background: white;
+				border: 1px solid rgb(var(--gray-light));
+				border-radius: 8px;
+				text-decoration: none;
+				color: inherit;
+				transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+			}
+			.card:hover {
+				transform: translateY(-2px);
+				box-shadow: 0 4px 14px rgba(var(--black), 0.08);
+				border-color: rgb(var(--accent));
+			}
+			.card h3 {
+				margin: 0 0 0.4em;
+				font-size: 1.2rem;
+				color: rgb(var(--black));
+			}
+			.card p {
+				margin: 0;
+				color: rgb(var(--gray-dark));
+				font-size: 0.95rem;
+				line-height: 1.45;
+			}
+			.foundational {
+				margin: 1.5em 0 0;
+				font-size: 0.95rem;
+			}
+			.app-section {
+				margin-top: 3.5em;
+				padding-top: 2em;
+				border-top: 1px solid rgb(var(--gray-light));
+			}
+			.app-section h2 {
+				margin: 0 0 0.6em;
+				font-size: 1.4rem;
+			}
+			.app-section p {
+				margin: 0;
+				max-width: 36em;
+				color: rgb(var(--gray-dark));
+			}
+			@media (max-width: 720px) {
+				main {
+					padding: 2em 1em;
+				}
+				.hero h1 {
+					font-size: 1.9rem;
+				}
+				.hero p {
+					font-size: 1rem;
+				}
+			}
+		</style>
 	</head>
 	<body>
 		<Header />
 		<main>
-			<h1>The autophagy stack</h1>
-			<p>
-				Autophagy is the closest thing your cells have to a self-cleaning cycle. It clears
-				damaged proteins, recycles dysfunctional mitochondria, and is one of the strongest
-				cellular signals associated with healthy ageing. Five practices reliably trigger it:
-				fasting, exercise, cold immersion, sauna, and hypoxic breathing.
-			</p>
-			<p>
-				This site is a practitioner's notebook on each of them. No supplements, no magic,
-				no hand-waving. Just what the literature actually says and what works in real weeks
-				of training.
-			</p>
-			<p>
-				An iPhone app of the same name is in development. More on that closer to launch.
-			</p>
+			<section class="hero">
+				<h1>The five practices that clean your cells.</h1>
+				<p>
+					A practitioner's notebook on fasting, exercise, cold immersion, sauna and
+					reset breathing. What the literature actually says and what works in real weeks
+					of training.
+				</p>
+				<p>
+					An iPhone app of the same name is in development. More on that closer to launch.
+				</p>
+			</section>
 
-			<h2>Start here</h2>
-			<ul>
-				<li>
-					<a href="/blog/what-is-autophagy/">What is autophagy? A practitioner's guide for athletes</a>
-				</li>
-			</ul>
-			<p>
-				More articles on each of the five practices are on the way.
-				<a href="/blog/">Browse the archive</a>.
-			</p>
+			<section class="modality-section">
+				<h2>The five practices.</h2>
+				<div class="grid">
+					{
+						modalities.map((m) => (
+							<a href={`/blog/${m.slug}/`} class="card">
+								<h3>{m.label}</h3>
+								<p>{m.teaser}</p>
+							</a>
+						))
+					}
+				</div>
+				<p class="foundational">
+					New to this? <a href="/blog/what-is-autophagy/">Read the foundational guide: what is autophagy?</a>
+				</p>
+			</section>
+
+			<section class="app-section">
+				<h2>The Autophagy app.</h2>
+				<p>
+					An iPhone app that tracks all five practices in one place, awards points for
+					hitting meaningful thresholds, and pulls your HRV, resting heart rate, sleep and
+					VO2 max from Apple Health to show you which combinations are working. Daily
+					target: 50 points, six days a week, with one rest day.
+				</p>
+			</section>
 		</main>
 		<Footer />
 	</body>
