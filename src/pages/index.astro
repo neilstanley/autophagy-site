@@ -2,7 +2,9 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
-import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
+import { SITE_DESCRIPTION } from '../consts';
+
+const PAGE_TITLE = 'Autophagy: Five Practices to Trigger It | Free iPhone App';
 
 const modalities = [
 	{
@@ -41,7 +43,7 @@ const modalities = [
 <!doctype html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
 				width: 960px;
@@ -134,16 +136,16 @@ const modalities = [
 		<Header />
 		<main>
 			<section class="hero">
-				<h1>The five practices that clean your cells.</h1>
+				<h1>The five practices that trigger autophagy.</h1>
 				<p>
-					A practitioner's notebook on exercise, reset breathing, fasting, cold immersion
-					and sauna. What the literature actually says and what works in real weeks of
-					training.
+					Autophagy is your cells' self-cleaning cycle and one of the strongest signals
+					associated with healthy ageing. Five practices reliably trigger it. This is a
+					practitioner's notebook on each, plus a free iPhone app that scores them.
 				</p>
 			</section>
 
 			<section class="modality-section">
-				<h2>The five practices.</h2>
+				<h2>The five autophagy practices.</h2>
 				<div class="grid">
 					{
 						modalities.map((m) => (
