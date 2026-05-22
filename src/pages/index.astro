@@ -2,6 +2,7 @@
 import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
+import AppStoreBadge from '../components/AppStoreBadge.astro';
 import { SITE_DESCRIPTION } from '../consts';
 
 const PAGE_TITLE = 'Autophagy: Five Practices to Trigger It | Free iPhone App';
@@ -52,7 +53,7 @@ const modalities = [
 				padding: 3em 1em;
 			}
 			.hero {
-				text-align: left;
+				text-align: center;
 				margin-bottom: 3em;
 			}
 			.hero h1 {
@@ -63,8 +64,12 @@ const modalities = [
 			.hero p {
 				font-size: 1.1rem;
 				color: rgb(var(--gray-dark));
-				margin: 0 0 0.8em;
+				margin: 0 auto 0.8em;
 				max-width: 36em;
+			}
+			.hero-cta {
+				margin-top: 1.75em;
+				text-align: center;
 			}
 			.modality-section h2 {
 				margin: 0 0 1em;
@@ -119,6 +124,9 @@ const modalities = [
 				max-width: 36em;
 				color: rgb(var(--gray-dark));
 			}
+			.app-section-cta {
+				margin-top: 1.5em;
+			}
 			@media (max-width: 720px) {
 				main {
 					padding: 2em 1em;
@@ -142,6 +150,9 @@ const modalities = [
 					associated with healthy ageing. Five practices reliably trigger it. This is a
 					practitioner's notebook on each, plus a free iPhone app that scores them.
 				</p>
+				<div class="hero-cta">
+					<AppStoreBadge height={56} />
+				</div>
 			</section>
 
 			<section class="modality-section">
@@ -165,9 +176,11 @@ const modalities = [
 				<h2>The Autophagy app.</h2>
 				<p>
 					A free iPhone app that logs the five practices and scores each day out of 100.
-					Default daily target is 42 points. One ring, one number, no tracking. More on it
-					closer to launch.
+					Default daily target is 42 points. One ring, one number, no tracking.
 				</p>
+				<div class="app-section-cta">
+					<AppStoreBadge height={54} />
+				</div>
 			</section>
 		</main>
 		<Footer />

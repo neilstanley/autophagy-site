@@ -1,0 +1,33 @@
+---
+import { APP_STORE_URL, APP_STORE_BADGE_ALT } from '../consts';
+
+interface Props {
+	height?: number;
+}
+
+const { height = 54 } = Astro.props;
+const width = Math.round(height * 3);
+---
+
+<a class="app-store-badge" href={APP_STORE_URL} aria-label={APP_STORE_BADGE_ALT}>
+	<img
+		src="/app-store-badge.svg"
+		alt={APP_STORE_BADGE_ALT}
+		width={width}
+		height={height}
+		style={`height:${height}px;width:auto;`}
+	/>
+</a>
+
+<style>
+	.app-store-badge {
+		display: inline-block;
+		line-height: 0;
+	}
+	.app-store-badge img {
+		display: block;
+	}
+	.app-store-badge:hover {
+		opacity: 0.85;
+	}
+</style>

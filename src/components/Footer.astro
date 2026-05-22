@@ -1,8 +1,13 @@
 ---
+import AppStoreBadge from './AppStoreBadge.astro';
 const today = new Date();
 ---
 
 <footer>
+	<div class="footer-app">
+		<p class="footer-app-label">Get the iPhone app</p>
+		<AppStoreBadge height={44} />
+	</div>
 	<nav class="footer-links">
 		<a href="/about/">About</a>
 		<span class="sep">·</span>
@@ -20,6 +25,14 @@ const today = new Date();
 		background: linear-gradient(var(--gray-gradient)) no-repeat;
 		color: rgb(var(--gray));
 		text-align: center;
+	}
+	.footer-app {
+		margin: 0 0 1.75em;
+	}
+	.footer-app-label {
+		margin: 0 0 0.7em;
+		font-size: 0.9rem;
+		color: rgb(var(--gray-dark));
 	}
 	.footer-links {
 		margin: 0 0 0.75em;
