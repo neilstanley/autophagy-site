@@ -10,27 +10,30 @@ import { SITE_TITLE } from '../consts';
 	<head>
 		<BaseHead
 			title={`Privacy | ${SITE_TITLE}`}
-			description="What Autophagy collects, where it lives, and what we share with anyone else. Short answer: nothing leaves your device."
+			description="What Autophagy collects, where it lives, and what we share with anyone else. Short answer: your health and session data never leave your device."
 		/>
 	</head>
 	<body>
 		<Header />
 		<main>
 			<h1>Privacy</h1>
-			<p><em>Effective 15 May 2026.</em></p>
+			<p><em>Effective 10 June 2026.</em></p>
 
 			<h2>Summary</h2>
 			<p>
-				The Autophagy iOS app collects no personal data. Every session you log
-				(fasting, exercise, cold, sauna, breathing) is stored on your device only.
-				Nothing is uploaded to our servers because we have no servers that hold
-				user data. We don't use third-party analytics inside the app, no tracking
-				SDKs, no advertising networks.
+				Everything you log in the Autophagy app (fasting, exercise, cold, sauna,
+				Reset Breathing) is stored on your device only, and any Apple Health data
+				the app reads stays on your device too. We have no servers that hold your
+				health or session data.
 			</p>
 			<p>
-				The marketing website at autophagy.fit uses Google Analytics for basic
-				traffic measurement (which pages people read, how they got here). That's
-				it.
+				The app uses two analytics services that collect only anonymous, aggregate
+				data and never your health or session data: TelemetryDeck for usage
+				analytics, and Google Analytics for Firebase to measure app installs and the
+				performance of our advertising. Neither uses your advertising identifier
+				(IDFA), and the app does not track you across other companies' apps or
+				websites. The marketing website at autophagy.fit uses Google Analytics for
+				basic traffic measurement.
 			</p>
 
 			<h2>The iOS app</h2>
@@ -46,14 +49,33 @@ import { SITE_TITLE } from '../consts';
 				no sync to a remote server. If you delete the app, the data is gone.
 			</p>
 
+			<h3>Apple Health</h3>
+			<p>
+				With your permission, the app reads heart rate variability, resting heart
+				rate, VO2 max, body mass and sleep from Apple Health, only to show you your
+				own recovery markers and how they line up with your practice. This access is
+				read-only, the data is not uploaded anywhere, and it stays on your device.
+				You can revoke it at any time in the iOS Health settings.
+			</p>
+
+			<h3>Analytics and measurement</h3>
+			<p>
+				The app uses TelemetryDeck for anonymous, aggregate usage analytics, and
+				Google Analytics for Firebase to measure app installs and in-app events, so
+				we can see which features are used and how well our advertising performs.
+				Neither service receives your health or session data, neither uses your
+				advertising identifier (IDFA), and the app does not track you across other
+				companies' apps or websites, so no App Tracking Transparency prompt is shown.
+				Install measurement uses Apple's privacy-preserving SKAdNetwork.
+			</p>
+
 			<h3>What we don't collect</h3>
 			<ul>
 				<li>No email address, name, phone number, or any other identifying information</li>
-				<li>No location data</li>
-				<li>No advertising identifiers</li>
-				<li>No HealthKit data in v1. HealthKit integration is planned for v2 and will be opt-in with the standard iOS permission prompt</li>
-				<li>No analytics events or usage telemetry from inside the app</li>
-				<li>No data sold or shared with third parties</li>
+				<li>No precise location</li>
+				<li>No advertising identifier (IDFA), and no tracking across other apps or websites</li>
+				<li>No selling of your data to anyone</li>
+				<li>Your Apple Health and logged session data is never sent to our analytics or to any third party</li>
 			</ul>
 
 			<h3>Notifications</h3>
