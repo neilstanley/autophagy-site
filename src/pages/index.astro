@@ -38,12 +38,16 @@ const modalities = [
 			'40% lower all-cause mortality at four sessions a week. The Finnish dose-response curve.',
 	},
 ];
+
+const APP_STORE_URL = 'https://apps.apple.com/app/autophagy/id6768245794';
 ---
 
 <!doctype html>
 <html lang="en">
 	<head>
 		<BaseHead title={PAGE_TITLE} description={SITE_DESCRIPTION} />
+		<!-- Apple Smart App Banner -->
+		<meta name="apple-itunes-app" content="app-id=6768245794" />
 		<style>
 			main {
 				width: 960px;
@@ -51,9 +55,17 @@ const modalities = [
 				margin: auto;
 				padding: 3em 1em;
 			}
+
+			/* ── Hero ── */
 			.hero {
-				text-align: left;
-				margin-bottom: 3em;
+				display: flex;
+				align-items: flex-start;
+				gap: 3rem;
+				margin-bottom: 3.5em;
+			}
+			.hero-text {
+				flex: 1 1 0;
+				min-width: 0;
 			}
 			.hero h1 {
 				font-size: 2.4rem;
@@ -63,16 +75,37 @@ const modalities = [
 			.hero p {
 				font-size: 1.1rem;
 				color: rgb(var(--gray-dark));
-				margin: 0 0 0.8em;
+				margin: 0 0 1.2em;
 				max-width: 36em;
 			}
+			.hero-app-badge img {
+				height: 44px;
+				display: block;
+			}
+
+			/* App screenshot column — shown only when a screenshot is provided */
+			.hero-screenshot {
+				flex: 0 0 auto;
+				width: 220px;
+			}
+			.hero-screenshot img {
+				width: 100%;
+				border-radius: 20px;
+				box-shadow: 0 8px 32px rgba(0,0,0,0.14);
+			}
+			/* Remove screenshot column when empty */
+			.hero-screenshot:empty {
+				display: none;
+			}
+
+			/* ── Practices grid ── */
 			.modality-section h2 {
 				margin: 0 0 1em;
 				font-size: 1.4rem;
 			}
 			.grid {
 				display: grid;
-				grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+				grid-template-columns: repeat(3, 1fr);
 				gap: 1.25rem;
 			}
 			.card {
@@ -101,33 +134,96 @@ const modalities = [
 				font-size: 0.95rem;
 				line-height: 1.45;
 			}
+			/* Last row: if 5 items in 3-col grid, span item 4+5 to fill evenly */
+			.card:nth-child(4) {
+				grid-column: span 1;
+			}
+			.grid-last-row {
+				display: contents;
+			}
 			.foundational {
 				margin: 1.5em 0 0;
 				font-size: 0.95rem;
 			}
+
+			/* ── App section ── */
 			.app-section {
 				margin-top: 3.5em;
 				padding-top: 2em;
 				border-top: 1px solid rgb(var(--gray-light));
+				display: flex;
+				align-items: flex-start;
+				gap: 3rem;
+			}
+			.app-section-text {
+				flex: 1 1 0;
+				min-width: 0;
 			}
 			.app-section h2 {
 				margin: 0 0 0.6em;
 				font-size: 1.4rem;
 			}
 			.app-section p {
-				margin: 0;
+				margin: 0 0 1.2em;
 				max-width: 36em;
 				color: rgb(var(--gray-dark));
 			}
+			.app-section p:last-of-type {
+				margin-bottom: 1.2em;
+			}
+			.app-badge img {
+				height: 44px;
+				display: block;
+			}
+
+			/* App screenshots row */
+			.app-screenshots {
+				display: flex;
+				gap: 1rem;
+				margin-top: 2em;
+				overflow-x: auto;
+			}
+			.app-screenshots img {
+				height: 320px;
+				width: auto;
+				border-radius: 18px;
+				box-shadow: 0 6px 24px rgba(0,0,0,0.12);
+				flex-shrink: 0;
+			}
+			/* Hide screenshots container when empty */
+			.app-screenshots:empty {
+				display: none;
+			}
+
+			/* ── Responsive ── */
 			@media (max-width: 720px) {
 				main {
 					padding: 2em 1em;
+				}
+				.hero {
+					flex-direction: column-reverse;
+					gap: 1.5rem;
+				}
+				.hero-screenshot {
+					width: 160px;
 				}
 				.hero h1 {
 					font-size: 1.9rem;
 				}
 				.hero p {
 					font-size: 1rem;
+				}
+				.grid {
+					grid-template-columns: 1fr 1fr;
+				}
+				.app-section {
+					flex-direction: column;
+					gap: 1.5rem;
+				}
+			}
+			@media (max-width: 480px) {
+				.grid {
+					grid-template-columns: 1fr;
 				}
 			}
 		</style>
@@ -136,12 +232,22 @@ const modalities = [
 		<Header />
 		<main>
 			<section class="hero">
-				<h1>The five practices that trigger autophagy.</h1>
-				<p>
-					Autophagy is your cells' self-cleaning cycle and one of the strongest signals
-					associated with healthy ageing. Five practices reliably trigger it. This is a
-					practitioner's notebook on each, plus a free iPhone app that scores them.
-				</p>
+				<div class="hero-text">
+					<h1>The five practices that trigger autophagy.</h1>
+					<p>
+						Autophagy is your cells' self-cleaning cycle and one of the strongest signals
+						associated with healthy ageing. Five practices reliably trigger it. This is a
+						practitioner's notebook on each, plus a free iPhone app that scores them.
+					</p>
+					<a href={APP_STORE_URL} class="hero-app-badge" aria-label="Download Autophagy on the App Store">
+						<img src="/app-store-badge.svg" alt="Download on the App Store" />
+					</a>
+				</div>
+				<div class="hero-screenshot">
+					{/* DROP IN: add a hero app screenshot here when available
+					    e.g. <img src="/screenshots/today-screen.png" alt="Autophagy app Today screen" />
+					    Recommended: 390×844 px (iPhone 15 Pro sized), no device frame needed */}
+				</div>
 			</section>
 
 			<section class="modality-section">
@@ -162,13 +268,26 @@ const modalities = [
 			</section>
 
 			<section class="app-section">
-				<h2>The Autophagy app.</h2>
-				<p>
-					A free iPhone app that logs the five practices and scores each day out of 100.
-					Default daily target is 42 points. One ring, one number, no tracking. More on it
-					closer to launch.
-				</p>
+				<div class="app-section-text">
+					<h2>The Autophagy app.</h2>
+					<p>
+						A free iPhone app that logs the five practices and scores each day out of 100.
+						Default daily target is 42 points. One ring, one number, no tracking.
+					</p>
+					<a href={APP_STORE_URL} class="app-badge" aria-label="Download Autophagy on the App Store">
+						<img src="/app-store-badge.svg" alt="Download on the App Store" />
+					</a>
+				</div>
 			</section>
+
+			{/* App screenshots — shown when screenshot files are added to /public/screenshots/
+			    DROP IN: uncomment and add screenshot files to /public/screenshots/
+			<div class="app-screenshots">
+				<img src="/screenshots/today.png" alt="Today screen showing daily score ring" />
+				<img src="/screenshots/log-exercise.png" alt="Exercise logging sheet" />
+				<img src="/screenshots/log-fasting.png" alt="Fasting logging sheet" />
+			</div>
+			*/}
 		</main>
 		<Footer />
 	</body>
