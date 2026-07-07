@@ -1,0 +1,74 @@
+---
+title: 'Sauna Benefits: What the Human Evidence Really Shows'
+description: 'Regular sauna use is one of the most evidence-backed longevity habits there is. Here is what the human data shows it does for your heart, and how to use it.'
+pubDate: '2026-07-07'
+---
+
+import AppStoreBadge from '../../components/AppStoreBadge.astro';
+import ArticleJsonLd from '../../components/ArticleJsonLd.astro';
+
+export const faq = [
+	{
+		question: 'How often should you use a sauna to get the benefits?',
+		answer: 'In the large Finnish cohort, the biggest reduction in mortality showed up at four to seven sessions a week, with a clear dose-response. Two to three times a week still helped. Once a week was the low-benefit baseline. If you can only manage two or three sessions, that is still worthwhile.',
+	},
+	{
+		question: 'How long should a sauna session be?',
+		answer: 'Around 15 to 20 minutes per session is the range associated with the best outcomes in the research. Sessions under about 11 minutes showed less benefit. Listen to your body and come out if you feel unwell rather than pushing a target.',
+	},
+	{
+		question: 'Is a sauna as good as exercise?',
+		answer: 'No, but it is a useful complement. A sauna raises your heart rate to a level similar to low-to-moderate exercise and lowers blood pressure over time, but it does not build strength or aerobic fitness. Treat it as an addition to training, not a replacement.',
+	},
+	{
+		question: 'Does an infrared sauna give the same benefits?',
+		answer: 'The strongest mortality evidence comes from traditional hot Finnish saunas, not infrared. Infrared saunas run cooler and the long-term outcome data is thinner. They may still help, but do not assume the Finnish findings transfer directly.',
+	},
+	{
+		question: 'Who should avoid the sauna?',
+		answer: 'Be cautious if you have unstable heart disease, very low blood pressure, or are pregnant, and speak to your doctor first. Do not use a sauna after drinking alcohol, and rehydrate well afterwards. Dehydration and fainting are the main practical risks.',
+	},
+];
+
+<p><strong>Autophagy tracks your sauna sessions alongside cold, breathing, fasting and exercise, so the habit actually sticks. Free on iPhone.</strong></p>
+
+<AppStoreBadge height={54} />
+
+Of the five practices this app is built around, the sauna has some of the strongest long-term human evidence behind it. Not mechanistic hand-waving, but large cohorts followed for decades. Here is what that evidence actually says, and what it does not.
+
+## What the human data shows
+
+The standout work comes from the Kuopio Ischaemic Heart Disease study in Finland, which followed more than 2,300 middle-aged men for around 20 years. Men who used a sauna four to seven times a week had roughly 40 per cent lower all-cause mortality than those who went once a week, along with markedly lower rates of fatal cardiovascular disease and sudden cardiac death ([the cohort findings are summarised here](https://www.mayoclinicproceedings.org/article/s0025-6196(18)30275-1/fulltext)). The relationship was dose-dependent: more frequent use, and longer sessions past about 19 minutes, tracked with better outcomes.
+
+A 2018 Mayo Clinic Proceedings review pulled the wider evidence together and concluded that regular sauna bathing is associated with lower risk of cardiovascular and all-cause mortality, and possibly better outcomes for blood pressure, dementia and respiratory conditions. More recently, a randomised controlled trial in people with coronary artery disease found that regular sauna sessions improved vascular function, which starts to move the story from association towards cause.
+
+## Why it plausibly works
+
+A sauna is mild, controlled heat stress. Your heart rate climbs to a level comparable with low-to-moderate exercise, your blood vessels dilate, and over weeks your blood pressure tends to fall. At the cellular level, heat switches on heat shock proteins, which help refold and clear damaged proteins, and it engages the same housekeeping machinery, including autophagy, that this whole approach is built around. Most of that cellular detail is still worked out in the lab rather than in people, so I would lean on the population data as the stronger evidence and treat the mechanism as the likely reason.
+
+## The honest caveats
+
+The headline mortality figures come from observational cohorts, which show association, not proof of cause. People who sauna four times a week in Finland may differ from those who do not in ways that also affect health. The randomised vascular data helps, but we do not have a decades-long trial and probably never will. The strongest evidence is also in Finnish men using traditional hot saunas, so be careful transferring it wholesale to infrared cabins or very different populations. None of this makes the sauna a treatment for any disease. It is a low-risk habit with unusually good supporting data, which is a rare and useful thing.
+
+## How to use it
+
+Aim for traditional sauna heat, around 15 to 20 minutes per session, and build towards two to four sessions a week if you can. Hydrate before and after, skip it entirely if you have been drinking, and come out if you feel lightheaded rather than chasing a time on the clock. If you have heart disease or low blood pressure, or you are pregnant, clear it with your doctor first.
+
+<p><strong>Log each session and watch your sauna habit build alongside the other four practices.</strong></p>
+
+<AppStoreBadge height={54} />
+
+## Where sauna fits
+
+Heat is one of five levers, next to cold, breathing, fasting and exercise. On its own the sauna is a pleasant, well-evidenced longevity habit. Stacked with the others it is part of a broader push on cellular housekeeping. For the deeper cellular version, I wrote a longer piece on [sauna and autophagy](/blog/sauna-and-autophagy/), and a hub on [how to trigger autophagy](/blog/how-to-trigger-autophagy/) that ties all five together.
+
+## Frequently asked questions
+
+{faq.map((item) => (
+	<div>
+		<h3>{item.question}</h3>
+		<p>{item.answer}</p>
+	</div>
+))}
+
+<ArticleJsonLd faq={faq} title={frontmatter.title} slug="sauna-benefits" />

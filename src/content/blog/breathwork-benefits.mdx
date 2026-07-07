@@ -1,0 +1,74 @@
+---
+title: 'Breathwork Benefits: Box Breathing and the Wim Hof Method'
+description: 'Box breathing calms you down and the Wim Hof method fires you up. Here is what the evidence supports, what it does not, and how to breathe safely.'
+pubDate: '2026-07-07'
+---
+
+import AppStoreBadge from '../../components/AppStoreBadge.astro';
+import ArticleJsonLd from '../../components/ArticleJsonLd.astro';
+
+export const faq = [
+	{
+		question: 'What is box breathing and does it work?',
+		answer: 'Box breathing means breathing in, holding, breathing out and holding again for an equal count, often four seconds each. Slow breathing like this reliably shifts you towards the calming, parasympathetic side of the nervous system and can lower acute stress and anxiety in the moment. The evidence for immediate calming is reasonable; claims of large long-term change are weaker.',
+	},
+	{
+		question: 'Is the Wim Hof method backed by science?',
+		answer: 'Partly. A 2014 study showed that people trained in the method could blunt their inflammatory response to an injected toxin, which was genuinely surprising. But it was small, in healthy young men, and it bundled breathing, cold and mindset together. It does not prove the method treats or prevents disease.',
+	},
+	{
+		question: 'What is the difference between box breathing and Wim Hof breathing?',
+		answer: 'They pull in opposite directions. Box breathing is slow and even and calms you down. Wim Hof breathing is fast, deep over-breathing followed by breath holds, which raises adrenaline and fires you up. Use slow breathing to settle, and Wim Hof style breathing for a stimulating reset, never the two interchangeably.',
+	},
+	{
+		question: 'Can breathwork be dangerous?',
+		answer: 'Heavy breathing methods can make you lightheaded or cause you to black out. Never do Wim Hof style breathing in or near water, in a bath, while driving, or standing up. Always do it sitting or lying down somewhere safe. Slow breathing like box breathing is very low risk.',
+	},
+	{
+		question: 'How long should I do breathwork for?',
+		answer: 'A few minutes is enough to feel a shift. Two to five minutes of slow box breathing settles the nervous system, and a typical Wim Hof session is three rounds. More is not automatically better, especially with the intense methods.',
+	},
+];
+
+<p><strong>Autophagy tracks your breathing practice alongside cold, fasting, exercise and sauna, so you can see it add up. Free on iPhone.</strong></p>
+
+<AppStoreBadge height={54} />
+
+Breathwork is the strangest of the five practices, because two very different methods both get called by the same word. One calms you down, the other winds you up, and confusing them is how people get it wrong. Here is the honest read on both.
+
+## Slow breathing: the calming case
+
+Box breathing, and slow breathing generally, is the well-grounded end of breathwork. When you slow your breath to around six breaths a minute and lengthen the exhale, you shift the balance of your nervous system towards the parasympathetic, rest-and-digest side. Heart rate variability rises, and people reliably report lower stress and anxiety in the moment. The evidence for acute calming is solid. It is a genuinely useful, zero-risk tool for a stressful day, before sleep, or before something you are nervous about.
+
+## The Wim Hof method: the surprising case
+
+The stimulating end of breathwork is high-ventilation breathing followed by breath holds, popularised by Wim Hof and usually paired with cold. The landmark evidence is a 2014 study in which people trained in the method were injected with a bacterial toxin. The trained group produced more adrenaline, released more of the anti-inflammatory signal IL-10, showed fewer inflammatory markers, and reported milder flu-like symptoms than untrained controls ([Kox et al., 2014](https://www.pnas.org/doi/10.1073/pnas.1322174111)). That was striking, because voluntarily influencing the innate immune response was thought impossible.
+
+I want to be careful here. It was a small study in healthy young men, it bundled breathing with cold exposure and mindset, and a later systematic review found the wider health claims are under-studied ([PLOS ONE, 2023](https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0286933)). So the honest position is: something real happens acutely, but it does not prove the method treats or prevents any disease.
+
+## The autophagy angle
+
+The version this app leans on is intermittent hypoxic breathing, the breath-hold side of the practice, which briefly and repeatedly lowers oxygen. Mild, repeated hypoxia is a hormetic stressor, and there is mechanistic reason to think it engages the cellular clean-up processes, including autophagy, that underpin the whole approach. This is the least studied of the five practices in humans, so I hold it more lightly than fasting, exercise or sauna. It is cheap to test and worth including, but do not overclaim it.
+
+## How to do it safely
+
+The single most important rule: heavy breathing methods can make you faint. Never do Wim Hof style breathing in or near water, in the bath, while driving, or standing up. Sit or lie down somewhere safe. Slow box breathing carries essentially no risk and can be done anywhere. Start with a few minutes of slow breathing to settle, keep the intense methods short and seated, and stop if you feel unwell.
+
+<p><strong>Log your sessions and build breathing into the rest of your practice.</strong></p>
+
+<AppStoreBadge height={54} />
+
+## Where breathing fits
+
+Breathing is one of five levers, alongside cold, fasting, exercise and sauna. For the deeper cellular version, I wrote a longer piece on [reset breathing and autophagy](/blog/reset-breathing-and-autophagy/), and a hub on [how to trigger autophagy](/blog/how-to-trigger-autophagy/) that ties all five together.
+
+## Frequently asked questions
+
+{faq.map((item) => (
+	<div>
+		<h3>{item.question}</h3>
+		<p>{item.answer}</p>
+	</div>
+))}
+
+<ArticleJsonLd faq={faq} title={frontmatter.title} slug="breathwork-benefits" />

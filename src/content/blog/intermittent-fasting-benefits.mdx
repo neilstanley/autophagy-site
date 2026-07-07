@@ -1,0 +1,76 @@
+---
+title: 'Intermittent Fasting Benefits: What the Evidence Shows'
+description: 'Intermittent fasting does more than help you lose weight. Here is what the human evidence shows about the metabolic switch, your cells, and how to do it.'
+pubDate: '2026-07-07'
+heroImage: './fasting-neil-spain.jpg'
+heroImageAlt: 'Neil outdoors in Spain during a multi-day water fast'
+---
+
+import AppStoreBadge from '../../components/AppStoreBadge.astro';
+import ArticleJsonLd from '../../components/ArticleJsonLd.astro';
+
+export const faq = [
+	{
+		question: 'What are the main benefits of intermittent fasting?',
+		answer: 'Beyond weight loss, the evidence points to improved insulin sensitivity, better blood pressure and blood lipids, and a metabolic switch that increases stress resistance at the cellular level. A major 2019 review argued these benefits are not simply a result of eating less.',
+	},
+	{
+		question: 'Is intermittent fasting just about eating fewer calories?',
+		answer: 'Not entirely. Fasting does usually reduce calorie intake, but the 2019 New England Journal of Medicine review made the case that some benefits come from the fasting state itself, through the switch from burning glucose to burning ketones and the cellular repair that follows.',
+	},
+	{
+		question: 'How many hours of fasting do you need?',
+		answer: 'The metabolic switch from glucose to ketones tends to kick in somewhere around 12 to 18 hours without food, which is why 16:8 style eating windows are popular. Longer fasts deepen the effect but are not necessary to get benefits, and are not for everyone.',
+	},
+	{
+		question: 'Does intermittent fasting trigger autophagy?',
+		answer: 'Yes, fasting is one of the most reliable ways to increase autophagy, your cells’ clean-up and recycling process. The clearest evidence is in animals, with growing human data. Autophagy rises as fasting continues past the point where glycogen runs low.',
+	},
+	{
+		question: 'Who should not try intermittent fasting?',
+		answer: 'Avoid it, or seek medical advice first, if you are pregnant or breastfeeding, have a history of disordered eating, are underweight, or have type 1 diabetes or another condition affecting blood sugar. Fasting is a tool, not a requirement, and it is not right for everyone.',
+	},
+];
+
+<p><strong>Autophagy tracks your fasting window alongside cold, breathing, exercise and sauna, so the practice actually adds up. Free on iPhone.</strong></p>
+
+<AppStoreBadge height={54} />
+
+Fasting is the practice most people mean when they talk about autophagy, and for good reason. It is also the one most tangled up with weight-loss marketing. Here is what the evidence supports once you strip that away.
+
+## More than weight loss
+
+The most influential recent summary is a 2019 review in the New England Journal of Medicine by de Cabo and Mattson, which pulled together the preclinical and clinical evidence on intermittent fasting ([the review is here](https://www.nejm.org/doi/full/10.1056/NEJMra1905136)). Its central argument is important: although intermittent fasting usually reduces how much you eat, weight loss is not the main driver of the health benefits seen in studies. Something about the fasting state itself matters.
+
+Across human studies, intermittent fasting has been associated with improved insulin sensitivity, lower blood pressure, better blood lipids and reduced markers of inflammation, in healthy people and in those with metabolic problems such as obesity and insulin resistance ([National Institute on Aging summary](https://www.nia.nih.gov/news/research-intermittent-fasting-shows-health-benefits)).
+
+## The metabolic switch
+
+The mechanism the review leans on is the metabolic switch. After roughly 12 hours or more without food, once your readily available sugar stores run low, your body shifts from running mainly on glucose to running on ketones made from fat. That switch does more than change fuel. It activates a set of cellular pathways, including AMPK and stress-response factors, that increase resistance to stress, ramp up repair, and drive autophagy, the process that clears and recycles damaged cell components. This is exactly why fasting sits at the centre of the autophagy story.
+
+## The honest caveats
+
+A lot of the most dramatic findings come from animal studies, where fasting extends lifespan and reduces disease. Human trials are shorter and messier, and much of the measurable benefit in people can be matched by simple calorie restriction. Adherence is the real-world limiter: the best fasting protocol is the one you can actually keep up. And fasting is not universally safe. It is the wrong tool for anyone with a history of disordered eating, and needs medical oversight in pregnancy, type 1 diabetes, and several other conditions. It is a lever, not a mandate.
+
+## How to start
+
+The gentlest entry point is a daily eating window, often 16 hours without food and an 8 hour window to eat, which many people reach just by dropping breakfast or dinner. That is enough to begin engaging the metabolic switch. Longer fasts deepen the effect but bring more caveats and are not necessary. Hydrate, keep your protein and training sensible, and build up rather than jumping to extremes.
+
+<p><strong>Log your fasting window and see it stack with the other four practices.</strong></p>
+
+<AppStoreBadge height={54} />
+
+## Where fasting fits
+
+Fasting is one of five levers, alongside cold, breathing, exercise and sauna. For the deeper cellular version, I wrote a longer piece on [fasting and autophagy](/blog/fasting-and-autophagy/), and a hub on [how to trigger autophagy](/blog/how-to-trigger-autophagy/) that ties all five together.
+
+## Frequently asked questions
+
+{faq.map((item) => (
+	<div>
+		<h3>{item.question}</h3>
+		<p>{item.answer}</p>
+	</div>
+))}
+
+<ArticleJsonLd faq={faq} title={frontmatter.title} slug="intermittent-fasting-benefits" />

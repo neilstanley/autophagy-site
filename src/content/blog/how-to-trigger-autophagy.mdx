@@ -1,0 +1,80 @@
+---
+title: 'How to Trigger Autophagy: The Five Practices That Work'
+description: 'Autophagy is your cells clean-up process. Five practices reliably trigger it: exercise, breathing, fasting, cold and sauna. Here is how to use each one.'
+pubDate: '2026-07-07'
+---
+
+import AppStoreBadge from '../../components/AppStoreBadge.astro';
+import ArticleJsonLd from '../../components/ArticleJsonLd.astro';
+
+export const faq = [
+	{
+		question: 'What is the fastest way to trigger autophagy?',
+		answer: 'Fasting is the most reliable single trigger, with autophagy rising as a fast continues past the point where sugar stores run low, often from around 14 to 16 hours onward. Exercise is a close second and works much faster. In practice, stacking several practices is more sustainable than chasing one hard.',
+	},
+	{
+		question: 'How long do you have to fast to trigger autophagy?',
+		answer: 'Evidence in humans is still developing, but autophagy appears to rise meaningfully once fasting passes roughly 14 to 16 hours and glycogen is depleted, deepening further over 24 to 48 hours. You do not need extreme fasts to get a benefit.',
+	},
+	{
+		question: 'Can you trigger autophagy without fasting?',
+		answer: 'Yes. Exercise, cold exposure, sauna heat and hypoxic breathing all engage autophagy through hormesis, the process by which a brief, manageable stress prompts the cell to repair and clean house. This is why the app is built around five practices, not just fasting.',
+	},
+	{
+		question: 'Is triggering autophagy actually good for you?',
+		answer: 'Autophagy is essential cellular maintenance, and the practices that trigger it are independently linked to better health. But most direct autophagy measurement is in animals, so treat the cellular claims with appropriate caution and focus on the well-evidenced practices themselves.',
+	},
+	{
+		question: 'What is the best daily routine to trigger autophagy?',
+		answer: 'A realistic day might combine a 16 hour eating window, a zone 2 or harder training session, and a short cold shower, with sauna and breathing added when you can. Consistency across the five beats perfection in any one.',
+	},
+];
+
+<p><strong>Autophagy brings all five practices into one place so you can see your daily clean-up add up. Free on iPhone.</strong></p>
+
+<AppStoreBadge height={54} />
+
+Autophagy is your cells' self-cleaning and recycling process, the system that breaks down and clears damaged parts of a cell before they cause harm. It is one of the mechanisms behind why brief, manageable stress seems to be good for us. The practical question is simple: how do you turn it on? The answer this app is built around is five practices, each a small hormetic stress that prompts the cell to repair and clean house.
+
+Here is the short version of each, and where to read more.
+
+## 1. Exercise
+
+Exercise is the most reliable everyday trigger, with the deepest evidence base of the five. It engages autophagy in muscle and beyond, and it builds the aerobic fitness that predicts how long you live. Start with an easy aerobic base and add some harder efforts. More on the practical side in [zone 2 training](/blog/zone-2-training/), and the cellular detail in [exercise and autophagy](/blog/exercise-and-autophagy/).
+
+## 2. Fasting
+
+Fasting is the single most dependable way to raise autophagy, which climbs as a fast continues past the point where sugar stores run low. A daily 16:8 eating window is the gentlest entry point. The benefits go beyond weight loss, through a metabolic switch that increases stress resistance. More in [intermittent fasting benefits](/blog/intermittent-fasting-benefits/) and [fasting and autophagy](/blog/fasting-and-autophagy/).
+
+## 3. Cold
+
+Cold is a sharp, brief stressor, and early human evidence shows cold exposure engages the cell's clean-up machinery. A 30 second cold finish to your shower is the accessible starting point; a cold plunge is a stronger dose. More in [cold shower benefits](/blog/cold-shower-benefits/) and [cold water and autophagy](/blog/cold-water-and-autophagy/).
+
+## 4. Sauna
+
+Heat is the mirror image of cold, and it has some of the strongest long-term human data of any practice here, with frequent sauna use linked to lower mortality. Heat switches on protective proteins and engages the same housekeeping machinery. More in [sauna benefits](/blog/sauna-benefits/) and [sauna and autophagy](/blog/sauna-and-autophagy/).
+
+## 5. Reset breathing
+
+Hypoxic breathing, briefly and repeatedly lowering oxygen through breath holds, is the least studied but cheapest to test. It is a mild hormetic stress with mechanistic reason to engage autophagy. More in [breathwork benefits](/blog/breathwork-benefits/) and [reset breathing and autophagy](/blog/reset-breathing-and-autophagy/).
+
+## How to actually use the five
+
+You do not need all five every day, and you should not chase any of them to extremes. The point is consistency across the set. A realistic day might be a 16 hour eating window, a training session, and a short cold shower, with sauna and breathing added when they fit. Stacked over weeks, these small stresses are a steady push on the cellular housekeeping that keeps you working well for longer.
+
+If you want the foundational explainer first, start with [what is autophagy](/blog/what-is-autophagy/).
+
+<p><strong>The app keeps all five in one place, with a simple daily target so the habit sticks.</strong></p>
+
+<AppStoreBadge height={54} />
+
+## Frequently asked questions
+
+{faq.map((item) => (
+	<div>
+		<h3>{item.question}</h3>
+		<p>{item.answer}</p>
+	</div>
+))}
+
+<ArticleJsonLd faq={faq} title={frontmatter.title} slug="how-to-trigger-autophagy" />
